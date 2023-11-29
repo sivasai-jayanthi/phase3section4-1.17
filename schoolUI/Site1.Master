@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="schoolUI.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<style type="text/css">
+		.auto-style1 {
+			width: 100%;
+			border-style: solid;
+			border-width: 1px;
+			background-color: #808000;
+		}
+		.auto-style3 {
+			height: 75px;
+		}
+		.auto-style4 {
+			height: 134px;
+		}
+		.auto-style5 {
+			height: 134px;
+			width: 866px;
+		}
+		.auto-style6 {
+			height: 75px;
+			width: 866px;
+		}
+	</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+				<tr>
+					<td class="auto-style5">
+						<asp:ImageButton ID="ImageButton1" runat="server" Height="307px" ImageUrl="~\Content\logo.png" Width="861px" />
+					</td>
+					<td class="auto-style4"></td>
+				</tr>
+				<tr>
+					<td class="auto-style6">
+						<asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+						</asp:Menu>
+						<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+					</td>
+					<td class="auto-style3"></td>
+				</tr>
+			</table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
